@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<head>
+    <title>projeto lendas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "oswald", sans-serif;
+        }
+
+        .interface{
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        .header{
+            width: 100%;
+            background-color: #acacac;
+        }
+
+        .parte-de-cima-menu{
+            background-color: #fff;
+            padding: 20px 4%;
+        }
+
+        .parte-de-cima-menu img{
+            max-width: 75px;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .parte-de-cima-menu > .interface{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .parte-de-cima-menu .redes-sociais button{
+            width: 45px;
+            height: 45px;
+            font-size: 20px;
+            border-radius: 50%;
+            background-color: transparent;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+    </style>
+
+    <style>
+        .parte-de-baixo-menu{
+            background-color: rgb(41, 41, 41);
+        }
+
+        .parte-de-baixo-menu .opcoes{
+            color: #fff;
+            padding: 20px 40px;
+            text-decoration: none;
+            font-weight: 600;
+            display: block;
+            transition: 0.1s;
+        }
+
+        .parte-de-baixo-menu .opcoes:hover{
+            background-color: rgb(0, 85, 182) ;
+            box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.553);
+            transition: 0.5;
+        }
+
+        .parte-de-baixo-menu ul{
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            list-style-type: none;
+
+        }
+
+        .menu-das-lendas{
+            position: relative;
+        }
+
+        .menu-das-lendas{
+            position: relative;
+        }
+
+        .menu-das-lendas .droop{
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.616);
+            width: 100%;
+            height: 0;
+            overflow: hidden;
+            transition: 0.2s;
+        }
+
+        .menu-das-lendas .droop a{
+            padding: 20px;
+        }
+
+        .menu-das-lendas .droop img{
+            max-width: 300px;
+            border-radius: 5%;
+        }
+
+        .menu-das-lendas:hover .droop{
+            height: 1200px;
+            width: 1200px;
+        }
+
+        .card-lenda {
+            position: relative;
+            display: inline-block;
+        }
+
+        .card-lenda img {
+            max-width: 275px;
+            border-radius: 5%;
+            display: block
+        }
+
+        .card-lenda .texto-sobreposto {
+            position: absolute;
+            bottom: 10px; /* distância da base da imagem */
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 5px 10px;
+        }
+
+        .lendas-hrf1 {
+            display: flex;
+            padding: 30px;
+            gap: 30px;
+        }
+
+        .parte-de-baixo-menu .link-lendas button{
+            text-decoration: none;
+            font-family: "oswald", sans-serif;
+            font-size: 20px;
+            cursor: pointer;
+            background-color: transparent;
+            color: #dddddd;
+            border: none;
+        }
+
+        .parte-de-baixo-menu .link-lendas button:hover{
+            font-size: 21px;
+            transition: 0.1s;
+            color: #fffdfd;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <section class="parte-de-cima-menu">
+            <div class="interface">
+                <div class="logotipos">
+                    <img src="imagens/logo ifsc.png" alt="logo ifsc">
+                    <img src="imagens/logo projeto lendas.png" alt="logo projeto lendas">
+                </div>
+
+                <div class="redes-sociais">
+                    <a href="#"><button><i class="bi bi-instagram"></i></button></a>
+                    <a href="#"><button><i class="bi bi-youtube"></i></button></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="parte-de-baixo-menu">
+
+            <div class="interface">
+                
+                <nav>
+                    <ul>
+                        <li><a href="#" class="opcoes">HOME</a></li>
+                        <li class="menu-das-lendas"><a href="#" class="opcoes">LENDAS <i class="bi bi-caret-down-fill"></i> </a>
+                            <div class="droop">
+                                <div class="lendas-hrf1">
+                                    <div class="card-lenda">
+                                    <div class="a coisa de fogo">
+                                        <img src="imagens/coisa de fogo.jpeg" alt="coisa de fogo">
+                                        <span class="texto-sobreposto"><a class="link-lendas"><button> A COISA DE FOGO </button></a></span>
+                                    </div>
+                                    </div>
+
+                                    <div class="card-lenda">
+                                    <div class="a mulher que chora">
+                                        <img src="imagens/A mulher que chora.png" alt=" a mulher uqe chora">
+                                        <span class="texto-sobreposto"><a class="link-lendas"><button> A MULHER QUE CHORA </button></a></span>
+                                    </div>
+                                    </div>
+
+                                    <div class="card-lenda">
+                                    <div class="o papo roxo">
+                                            <img src="imagens/O papo-roxo.png" alt="o papo rooxo">
+                                            <span class="texto-sobreposto"><a class="link-lendas"><button> O PAPO ROXO </button></a></span>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="lendas-hrf1">
+                                    <div class="card-lenda">
+                                    <div class="o lobisomem de paulo lopes">
+                                            <img src="imagens/Lobisomem de Paulo Lopes.png" alt="o lobismowm">
+                                            <span class="texto-sobreposto"><a class="link-lendas"><button> O LOBISOMEM DE PAULO LOPES </button></a></span>
+                                    </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#" class="opcoes">CURTAS</a>
+                        
+                        </li>
+                        <li><a href="#" class="opcoes">SOBRE</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+        </section>
+    </header>
+</body>
